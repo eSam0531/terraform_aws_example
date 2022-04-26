@@ -38,7 +38,7 @@ resource "aws_security_group" "prod_web" {
 }
 
 resource "aws_instance" "prod_web" {
-  ami         	= "ami-0dbfcd9f5e59badeb"
+  ami         	= "ami-0b0ea68c435eb488d"
   instance_type = "t2.nano"
   
   vpc_security_group_ids = [
