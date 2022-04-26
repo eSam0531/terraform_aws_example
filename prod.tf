@@ -11,7 +11,7 @@ resource "aws_default_vpc" "default" {}
 
 resource "aws_security_group" "prod_web" {
   name        = "prod_web"
-  description = "Allow standard http and https ports inoub and everything outbound"
+  description = "Allow standard http and https ports inbound and everything outbound"
 
   ingress {
     from_port   = 80
